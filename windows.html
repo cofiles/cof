@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Сборки и образы Windows | Сборник</title>
+<meta name="description" content="Официальные образы, инструменты для сборки своего образа и аварийные диски.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">Сборник</a>
+  <nav aria-label="Разделы"><a href="index.html">Главная</a><a href="tools.html">Программы</a><a href="windows.html" aria-current="page">Windows</a><a href="python.html">Python-пакеты</a><a href="languages.html">Языки</a><a href="repos.html">Репозитории</a><a href="articles.html">Статьи</a><a href="files.html">Файлы</a></nav>
+</header>
+<main class="wrap">
+<h1>Сборки и образы Windows</h1>
+<p class="lead">Официальные образы, инструменты для сборки своего образа и аварийные диски.</p>
+<div class="notice" role="note"><strong>О готовых сборках.</strong> Здесь нет ссылок на чужие готовые сборки с форумов и торрентов. Такие образы могут содержать вредоносный код, активаторы и отключенные обновления, а их лицензия нарушена. Безопаснее взять официальный ISO и настроить его самому инструментами из группы "Свой образ из официального ISO".</div>
+<div class="toolbar"><label class="sr" for="search">Поиск</label><input id="search" type="search" placeholder="Найти образ или инструмент" autocomplete="off"></div>
+<div id="chips" class="chips" role="group" aria-label="Фильтр по теме"></div>
+<p id="count" class="muted" aria-live="polite"></p>
+<!-- Чтобы добавить запись, скопируй любой блок article ниже и поменяй текст и ссылку -->
+  <section class="group">
+    <h2>Официальные образы и сроки поддержки</h2>
+    <div class="list">
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://www.microsoft.com/software-download/windows11" target="_blank" rel="noopener noreferrer">Скачать Windows 11</a></h3>
+        <p>Официальный ISO и средство установки</p>
+      </article>
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://www.microsoft.com/software-download/windows10" target="_blank" rel="noopener noreferrer">Скачать Windows 10</a></h3>
+        <p>Официальный ISO и средство установки</p>
+      </article>
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://www.microsoft.com/software-download/windowsinsiderpreviewiso" target="_blank" rel="noopener noreferrer">Windows Insider Preview ISO</a></h3>
+        <p>Предварительные сборки Windows</p>
+      </article>
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://www.microsoft.com/evalcenter/" target="_blank" rel="noopener noreferrer">Центр пробных версий Microsoft</a></h3>
+        <p>Пробные версии Windows, Server и другого ПО</p>
+      </article>
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://www.microsoft.com/evalcenter/evaluate-windows-11-enterprise" target="_blank" rel="noopener noreferrer">Windows 11 Enterprise, пробная</a></h3>
+        <p>Пробная версия на 90 дней</p>
+      </article>
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://www.microsoft.com/evalcenter/evaluate-windows-11-iot-enterprise-ltsc" target="_blank" rel="noopener noreferrer">Windows 11 IoT Enterprise LTSC, пробная</a></h3>
+        <p>Версия с долгой поддержкой</p>
+      </article>
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://www.microsoft.com/evalcenter/evaluate-windows-server-2025" target="_blank" rel="noopener noreferrer">Windows Server, пробная</a></h3>
+        <p>Серверные версии Windows</p>
+      </article>
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://developer.microsoft.com/windows/downloads/virtual-machines/" target="_blank" rel="noopener noreferrer">Виртуальные машины для разработчиков</a></h3>
+        <p>Готовые виртуальные машины Windows</p>
+      </article>
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://www.catalog.update.microsoft.com/" target="_blank" rel="noopener noreferrer">Каталог Центра обновления Microsoft</a></h3>
+        <p>Загрузка отдельных обновлений</p>
+      </article>
+      <article class="item" data-tags="официальные">
+        <h3><a href="https://www.microsoft.com/windows/windows-11-specifications" target="_blank" rel="noopener noreferrer">Требования Windows 11</a></h3>
+        <p>Системные требования</p>
+      </article>
+    </div>
+  </section>
+  <section class="group">
+    <h2>Получение и запись образов</h2>
+    <div class="list">
+      <article class="item" data-tags="образы">
+        <h3><a href="https://uupdump.net/" target="_blank" rel="noopener noreferrer">UUP dump</a></h3>
+        <p>Сборка ISO из файлов обновлений Microsoft</p>
+      </article>
+      <article class="item" data-tags="образы">
+        <h3><a href="https://github.com/pbatard/Fido" target="_blank" rel="noopener noreferrer">Fido</a></h3>
+        <p>Скрипт загрузки ISO от автора Rufus</p>
+      </article>
+      <article class="item" data-tags="образы">
+        <h3><a href="https://www.heidoc.net/joomla/technology-science/microsoft/67-windows-iso-downloader" target="_blank" rel="noopener noreferrer">Windows ISO Downloader</a></h3>
+        <p>Ссылки на официальные образы Microsoft</p>
+      </article>
+      <article class="item" data-tags="образы">
+        <h3><a href="https://rufus.ie/" target="_blank" rel="noopener noreferrer">Rufus</a></h3>
+        <p>Загрузочные USB из ISO</p>
+      </article>
+      <article class="item" data-tags="образы">
+        <h3><a href="https://www.ventoy.net/" target="_blank" rel="noopener noreferrer">Ventoy</a></h3>
+        <p>Запуск ISO с флешки без записи</p>
+      </article>
+      <article class="item" data-tags="образы">
+        <h3><a href="https://etcher.balena.io/" target="_blank" rel="noopener noreferrer">balenaEtcher</a></h3>
+        <p>Запись образов на флешки</p>
+      </article>
+      <article class="item" data-tags="образы">
+        <h3><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-filehash" target="_blank" rel="noopener noreferrer">Get-FileHash</a></h3>
+        <p>Проверка контрольной суммы ISO</p>
+      </article>
+      <article class="item" data-tags="образы">
+        <h3><a href="https://www.easyuefi.com/wintousb/" target="_blank" rel="noopener noreferrer">WinToUSB</a></h3>
+        <p>Запуск Windows с флешки</p>
+      </article>
+    </div>
+  </section>
+  <section class="group">
+    <h2>Свой образ из официального ISO</h2>
+    <div class="list">
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://github.com/ntdevlabs/tiny11builder" target="_blank" rel="noopener noreferrer">tiny11builder</a></h3>
+        <p>Скрипт сборки облегченного образа из официального ISO</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://www.ntlite.com/" target="_blank" rel="noopener noreferrer">NTLite</a></h3>
+        <p>Настройка и сжатие образа Windows</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://msmgtoolkit.in/" target="_blank" rel="noopener noreferrer">MSMG Toolkit</a></h3>
+        <p>Удаление и настройка компонентов образа</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://github.com/Raphire/Win11Debloat" target="_blank" rel="noopener noreferrer">Win11Debloat</a></h3>
+        <p>Скрипт удаления лишних приложений</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://github.com/ChrisTitusTech/winutil" target="_blank" rel="noopener noreferrer">WinUtil</a></h3>
+        <p>Настройка Windows и установка программ</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://github.com/farag2/Sophia-Script-for-Windows" target="_blank" rel="noopener noreferrer">Sophia Script</a></h3>
+        <p>Тонкая настройка Windows скриптом</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://atlasos.net/" target="_blank" rel="noopener noreferrer">AtlasOS</a></h3>
+        <p>Открытый плейбук для настройки Windows</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://revi.cc/" target="_blank" rel="noopener noreferrer">ReviOS</a></h3>
+        <p>Плейбук для настройки Windows</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://learn.microsoft.com/windows-hardware/get-started/adk-install" target="_blank" rel="noopener noreferrer">Windows ADK</a></h3>
+        <p>Набор средств развертывания Windows</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://learn.microsoft.com/windows-hardware/manufacture/desktop/what-is-dism" target="_blank" rel="noopener noreferrer">DISM</a></h3>
+        <p>Обслуживание образов Windows</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://learn.microsoft.com/windows-hardware/customize/desktop/unattend/" target="_blank" rel="noopener noreferrer">Файл ответов unattend</a></h3>
+        <p>Автоматическая установка Windows</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://schneegans.de/windows/unattend-generator/" target="_blank" rel="noopener noreferrer">Генератор unattend.xml</a></h3>
+        <p>Создание файла ответов в браузере</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://learn.microsoft.com/windows-hardware/manufacture/desktop/wsim/windows-system-image-manager-technical-reference" target="_blank" rel="noopener noreferrer">Windows System Image Manager</a></h3>
+        <p>Создание файлов ответов</p>
+      </article>
+      <article class="item" data-tags="свой-образ">
+        <h3><a href="https://learn.microsoft.com/mem/configmgr/mdt/" target="_blank" rel="noopener noreferrer">Microsoft Deployment Toolkit</a></h3>
+        <p>Развертывание Windows в сети</p>
+      </article>
+    </div>
+  </section>
+  <section class="group">
+    <h2>Аварийные диски и WinPE</h2>
+    <div class="list">
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://www.hirensbootcd.org/" target="_blank" rel="noopener noreferrer">Hiren&#x27;s BootCD PE</a></h3>
+        <p>Аварийный диск на Windows PE</p>
+      </article>
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://sergeistrelec.ru/" target="_blank" rel="noopener noreferrer">Sergei Strelec WinPE</a></h3>
+        <p>Аварийный диск на Windows PE</p>
+      </article>
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://github.com/PhoenixPE/PhoenixPE" target="_blank" rel="noopener noreferrer">PhoenixPE</a></h3>
+        <p>Конструктор образа Windows PE</p>
+      </article>
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://medicatusb.com/" target="_blank" rel="noopener noreferrer">Medicat USB</a></h3>
+        <p>Флешка с аварийными инструментами</p>
+      </article>
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://www.system-rescue.org/" target="_blank" rel="noopener noreferrer">SystemRescue</a></h3>
+        <p>Аварийный диск на Linux</p>
+      </article>
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://gparted.org/livecd.php" target="_blank" rel="noopener noreferrer">GParted Live</a></h3>
+        <p>Аварийный диск для работы с разделами</p>
+      </article>
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://clonezilla.org/clonezilla-live.php" target="_blank" rel="noopener noreferrer">Clonezilla Live</a></h3>
+        <p>Клонирование дисков с загрузочной флешки</p>
+      </article>
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://learn.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro" target="_blank" rel="noopener noreferrer">Windows PE</a></h3>
+        <p>Документация по Windows PE</p>
+      </article>
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://learn.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference" target="_blank" rel="noopener noreferrer">Среда восстановления Windows</a></h3>
+        <p>Документация по Windows RE</p>
+      </article>
+      <article class="item" data-tags="winpe">
+        <h3><a href="https://www.ultimatebootcd.com/" target="_blank" rel="noopener noreferrer">Ultimate Boot CD</a></h3>
+        <p>Набор диагностических утилит</p>
+      </article>
+    </div>
+  </section>
+  <section class="group">
+    <h2>Справка и новости</h2>
+    <div class="list">
+      <article class="item" data-tags="справка">
+        <h3><a href="https://learn.microsoft.com/windows/release-health/" target="_blank" rel="noopener noreferrer">Windows release health</a></h3>
+        <p>Известные проблемы и состояние обновлений</p>
+      </article>
+      <article class="item" data-tags="справка">
+        <h3><a href="https://learn.microsoft.com/windows/release-health/windows11-release-information" target="_blank" rel="noopener noreferrer">Версии Windows 11</a></h3>
+        <p>Номера сборок и даты выхода</p>
+      </article>
+      <article class="item" data-tags="справка">
+        <h3><a href="https://learn.microsoft.com/lifecycle/products/windows-11-home-and-pro" target="_blank" rel="noopener noreferrer">Жизненный цикл Windows 11</a></h3>
+        <p>Сроки поддержки</p>
+      </article>
+      <article class="item" data-tags="справка">
+        <h3><a href="https://learn.microsoft.com/lifecycle/products/windows-10-home-and-pro" target="_blank" rel="noopener noreferrer">Жизненный цикл Windows 10</a></h3>
+        <p>Сроки поддержки</p>
+      </article>
+      <article class="item" data-tags="справка">
+        <h3><a href="https://learn.microsoft.com/windows/deployment/" target="_blank" rel="noopener noreferrer">Развертывание Windows</a></h3>
+        <p>Документация Microsoft Learn</p>
+      </article>
+      <article class="item" data-tags="справка">
+        <h3><a href="https://blogs.windows.com/" target="_blank" rel="noopener noreferrer">Windows Blog</a></h3>
+        <p>Новости Windows</p>
+      </article>
+      <article class="item" data-tags="справка">
+        <h3><a href="https://blogs.windows.com/windows-insider/" target="_blank" rel="noopener noreferrer">Windows Insider Blog</a></h3>
+        <p>Новости предварительных сборок</p>
+      </article>
+      <article class="item" data-tags="справка">
+        <h3><a href="https://support.microsoft.com/windows" target="_blank" rel="noopener noreferrer">Поддержка Windows</a></h3>
+        <p>Справка Microsoft</p>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="foot">Сборник полезного</footer>
+</body>
+</html>
