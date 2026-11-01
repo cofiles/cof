@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Как добавить запись на сайт | Сборник</title>
+<meta name="description" content="Инструкция по редактированию сайта">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="../index.html">Сборник</a>
+  <nav aria-label="Разделы"><a href="../index.html">Главная</a><a href="../tools.html">Программы</a><a href="../python.html">Python-пакеты</a><a href="../languages.html">Языки</a><a href="../repos.html">Репозитории</a><a href="../articles.html">Статьи</a><a href="../files.html">Файлы</a></nav>
+</header>
+<main class="wrap">
+<p class="muted"><a href="../articles.html">Все статьи</a></p>
+<article class="prose">
+<h1>Как добавить запись на сайт</h1>
+<p>Сайт состоит из обычных HTML-файлов. Базы данных нет, все правки делаются в тексте.</p>
+<h2>Добавить программу, язык или репозиторий</h2>
+<ol>
+<li>Открой нужную страницу, например tools.html, в редакторе кода</li>
+<li>Найди блок article внутри нужной группы</li>
+<li>Скопируй блок целиком и вставь под ним</li>
+<li>Поменяй название, описание и ссылку</li>
+<li>Сохрани файл и отправь изменения в GitHub</li>
+</ol>
+<h2>Добавить Python-пакет</h2>
+<p>Скопируй блок article на странице python.html. Поменяй имя пакета в трех местах: id, value и текст. Атрибут data-sets задает готовые наборы, data-version нужен для режимов с версиями.</p>
+<h2>Добавить файл</h2>
+<ol>
+<li>Положи файл в папку files</li>
+<li>Запусти python make_hashes.py</li>
+<li>Скопируй выданную строку в таблицу на files.html</li>
+</ol>
+</article>
+</main>
+<footer class="foot">Сборник полезного</footer>
+</body>
+</html>
