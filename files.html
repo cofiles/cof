@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Файлы | Сборник</title>
+<meta name="description" content="Файлы для скачивания">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">Сборник</a>
+  <nav aria-label="Разделы"><a href="index.html">Главная</a><a href="tools.html">Программы</a><a href="python.html">Python-пакеты</a><a href="languages.html">Языки</a><a href="repos.html">Репозитории</a><a href="articles.html">Статьи</a><a href="files.html" aria-current="page">Файлы</a></nav>
+</header>
+<main class="wrap">
+<h1>Файлы</h1>
+<p class="lead">Файлы лежат в папке files этого репозитория. Хеш SHA-256 помогает проверить, что файл скачался без изменений.</p>
+<div class="toolbar"><label class="sr" for="search">Поиск</label><input id="search" type="search" placeholder="Найти файл" autocomplete="off"></div>
+<p id="count" class="muted" aria-live="polite"></p>
+<!-- Строки таблицы для новых файлов выдает скрипт make_hashes.py. Вставь их в tbody -->
+<div class="table-wrap"><table>
+<thead><tr><th>Файл</th><th>Размер</th><th>SHA-256</th><th>Описание</th></tr></thead>
+<tbody>
+<tr class="item">
+  <td><a href="files/example.txt" download>example.txt</a></td>
+  <td>101 Б</td>
+  <td><code>0a682b8f6608be679fa6ead6a4b064de5020f423dcc2f4e2c52c5c2a0cbeb5e1</code></td>
+  <td>Пример файла</td>
+</tr>
+</tbody></table></div>
+<p class="muted">Файлы больше 100 МБ GitHub в репозиторий не принимает. Для таких файлов используй раздел Releases и вставляй ссылку на файл оттуда.</p>
+</main>
+<footer class="foot">Сборник полезного</footer>
+</body>
+</html>
