@@ -8,7 +8,12 @@
 
 A static directory of software, Python packages, technologies and repositories with an interactive interface.
 
-**HTML · CSS · Vanilla JavaScript · RU / EN · Dark / Light · No build step**
+[![HTML5](https://img.shields.io/badge/HTML5-171F44?style=for-the-badge&logo=html5&logoColor=E34F26)](index.html)
+[![CSS](https://img.shields.io/badge/CSS-171F44?style=for-the-badge&logo=css&logoColor=74FFED)](assets/style.css)
+[![Vanilla JavaScript](https://img.shields.io/badge/Vanilla_JavaScript-171F44?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](assets/interactions.js)
+[![RU / EN](https://img.shields.io/badge/RU_%2F_EN-171F44?style=for-the-badge&logo=googletranslate&logoColor=74FFED)](assets/translations.js)
+[![Dark / Light](https://img.shields.io/badge/Dark_%2F_Light-171F44?style=for-the-badge&logo=darkreader&logoColor=74FFED)](#features)
+[![No build step](https://img.shields.io/badge/No_build_step-171F44?style=for-the-badge&logo=github&logoColor=74FFED)](#quick-start)
 
 [Запуск / Run](#quick-start) · [Возможности / Features](#features) · [Публикация / Deploy](#deploy) · [Редактирование / Edit](#edit) · [Проверки / Checks](#checks)
 
