@@ -3,21 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="dark light">
+<script src="assets/preferences.js"></script>
 <title>Python-пакеты | Сборник</title>
 <meta name="description" content="Каталог Python-пакетов и генератор requirements.txt">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/translations.js" defer></script>
+<script src="assets/i18n.js" defer></script>
+<script src="assets/catalog-python.js" defer></script>
+<script src="assets/catalog.js" defer></script>
 <script src="assets/app.js" defer></script>
 </head>
 <body>
 <header class="top">
   <a class="logo" href="index.html">Сборник</a>
   <nav aria-label="Разделы"><a href="index.html">Главная</a><a href="tools.html">Программы</a><a href="windows.html">Windows</a><a href="python.html" aria-current="page">Python-пакеты</a><a href="languages.html">Языки</a><a href="repos.html">Репозитории</a><a href="articles.html">Статьи</a><a href="files.html">Файлы</a></nav>
+  <div class="site-settings" role="group" aria-label="Настройки сайта">
+    <label class="sr" for="site-language">Язык</label>
+    <select id="site-language"><option value="ru">Русский</option><option value="en">English</option></select>
+    <button id="site-theme" type="button" class="chip" aria-label="Оформление">Светлая тема</button>
+  </div>
 </header>
 <main class="wrap">
 <h1>Python-пакеты</h1>
 <p class="lead">Отметь нужные пакеты и скачай готовый requirements.txt.</p>
+<p class="catalog-note muted">Подборки дополнены проектами по расширенным темам. Поиск охватывает все записи, включая следующие страницы.</p>
 <div class="toolbar"><label class="sr" for="search">Поиск</label><input id="search" type="search" placeholder="Найти пакет" autocomplete="off"></div>
 <div id="chips" class="chips" role="group" aria-label="Фильтр по теме"></div>
 <p id="count" class="muted" aria-live="polite"></p>
@@ -1815,11 +1826,12 @@
     <div class="actions">
       <button type="button" class="btn" id="req-download">Скачать</button>
       <button type="button" class="btn ghost" id="req-copy">Копировать</button>
+      <button type="button" class="btn ghost" id="req-all">Выбрать все пакеты</button>
       <button type="button" class="btn ghost" id="req-clear">Очистить</button>
     </div>
   </aside>
 </div>
 </main>
-<footer class="foot">Сборник полезного</footer>
+<footer class="foot">Сборник полезного · <a href="sources.html">Об источниках</a></footer>
 </body>
 </html>

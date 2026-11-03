@@ -29,8 +29,8 @@
       groups.forEach(function (g) {
         g.hidden = !$$(".item", g).some(function (it) { return !it.hidden; });
       });
-      chips.forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-tag") === active)); });
-      if (count) count.textContent = "Показано: " + shown + " из " + items.length;
+      chips.forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-tag") === active)); c.textContent = siteText(c.getAttribute("data-tag") || "Все"); });
+      if (count) count.textContent = siteText("Показано: ") + shown + siteText(" из ") + items.length;
     }
 
     if (chipBox) {
@@ -41,13 +41,14 @@
         b.type = "button";
         b.className = "chip";
         b.setAttribute("data-tag", t);
-        b.textContent = t || "Все";
+        b.textContent = siteText(t || "Все");
         b.addEventListener("click", function () { active = t; apply(); });
         chipBox.appendChild(b);
         chips.push(b);
       });
     }
     input.addEventListener("input", apply);
+    document.addEventListener("site-language-change", apply);
     apply();
   }
 
@@ -71,12 +72,13 @@
     function text() { var l = lines(); return l.length ? l.join("\n") + "\n" : ""; }
     function refresh() {
       var t = text();
-      preview.textContent = t || "Отметь пакеты в списке";
-      counter.textContent = "Выбрано: " + lines().length;
+      preview.textContent = t || siteText("Отметь пакеты в списке");
+      counter.textContent = siteText("Выбрано: ") + lines().length;
     }
 
     boxes.forEach(function (b) { b.addEventListener("change", refresh); });
     mode.addEventListener("change", refresh);
+    document.addEventListener("site-language-change", refresh);
 
     $$("[data-set]").forEach(function (btn) {
       btn.addEventListener("click", function () {
@@ -90,6 +92,7 @@
       });
     });
 
+    $("#req-all").addEventListener("click", function () { boxes.forEach(function (b) { b.checked = true; }); refresh(); });
     $("#req-clear").addEventListener("click", function () {
       boxes.forEach(function (b) { b.checked = false; });
       refresh();
@@ -97,7 +100,7 @@
 
     $("#req-download").addEventListener("click", function () {
       var t = text();
-      if (!t) { preview.textContent = "Сначала отметь пакеты"; return; }
+      if (!t) { preview.textContent = siteText("Сначала отметь пакеты"); return; }
       var url = URL.createObjectURL(new Blob([t], { type: "text/plain;charset=utf-8" }));
       var a = document.createElement("a");
       a.href = url;
@@ -112,7 +115,7 @@
     copyBtn.addEventListener("click", function () {
       var t = text();
       if (!t) return;
-      function done() { copyBtn.textContent = "Скопировано"; setTimeout(function () { copyBtn.textContent = "Копировать"; }, 1500); }
+      function done() { copyBtn.textContent = siteText("Скопировано"); setTimeout(function () { copyBtn.textContent = siteText("Копировать"); }, 1500); }
       function fallback() {
         var ta = document.createElement("textarea");
         ta.value = t;
@@ -128,5 +131,5 @@
     refresh();
   }
 
-  document.addEventListener("DOMContentLoaded", function () { initFilter(); initPackages(); });
+  document.addEventListener("DOMContentLoaded", function () { if (window.CATALOG_ADDITIONS) return; initFilter(); initPackages(); });
 })();

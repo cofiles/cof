@@ -3,17 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="dark light">
+<script src="assets/preferences.js"></script>
 <title>Все полезное в одном месте | Сборник</title>
 <meta name="description" content="Сборник программ, языков, Python-пакетов, репозиториев и файлов">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/translations.js" defer></script>
+<script src="assets/i18n.js" defer></script>
 <script src="assets/app.js" defer></script>
 </head>
 <body>
 <header class="top">
   <a class="logo" href="index.html">Сборник</a>
   <nav aria-label="Разделы"><a href="index.html" aria-current="page">Главная</a><a href="tools.html">Программы</a><a href="windows.html">Windows</a><a href="python.html">Python-пакеты</a><a href="languages.html">Языки</a><a href="repos.html">Репозитории</a><a href="articles.html">Статьи</a><a href="files.html">Файлы</a></nav>
+  <div class="site-settings" role="group" aria-label="Настройки сайта">
+    <label class="sr" for="site-language">Язык</label>
+    <select id="site-language"><option value="ru">Русский</option><option value="en">English</option></select>
+    <button id="site-theme" type="button" class="chip" aria-label="Оформление">Светлая тема</button>
+  </div>
 </header>
 <main class="wrap">
 <section class="hero">
@@ -22,15 +30,15 @@
 <p><a class="btn" href="python.html">Собрать requirements.txt</a> <a class="btn ghost" href="tools.html">Программы для ПК</a></p>
 </section>
 <div class="list">
-  <a class="item card" href="tools.html"><h3>Программы и утилиты</h3><p>Диски, система, разработка, сеть, медиа и другое для ПК</p><p class="muted">Записей: 400</p></a>
-  <a class="item card" href="windows.html"><h3>Сборки Windows</h3><p>Официальные образы, свой образ из ISO, аварийные диски</p><p class="muted">Записей: 50</p></a>
-  <a class="item card" href="python.html"><h3>Python-пакеты</h3><p>Каталог пакетов и генератор requirements.txt</p><p class="muted">Записей: 400</p></a>
-  <a class="item card" href="languages.html"><h3>Языки и технологии</h3><p>Языки, фреймворки, базы данных и учебники</p><p class="muted">Записей: 400</p></a>
-  <a class="item card" href="repos.html"><h3>Репозитории GitHub</h3><p>Полезные проекты и подборки</p><p class="muted">Записей: 400</p></a>
+  <a class="item card" href="tools.html"><h3>Программы и утилиты</h3><p>Диски, система, разработка, сеть, медиа и другое для ПК</p><p class="muted">Записей: 35 035</p></a>
+  <a class="item card" href="windows.html"><h3>Сборки Windows</h3><p>Официальные образы, свой образ из ISO, аварийные диски</p><p class="muted">Записей: 5 005</p></a>
+  <a class="item card" href="python.html"><h3>Python-пакеты</h3><p>Каталог пакетов и генератор requirements.txt</p><p class="muted">Записей: 35 035</p></a>
+  <a class="item card" href="languages.html"><h3>Языки и технологии</h3><p>Языки, фреймворки, базы данных и учебники</p><p class="muted">Записей: 17 017</p></a>
+  <a class="item card" href="repos.html"><h3>Репозитории GitHub</h3><p>Полезные проекты и подборки</p><p class="muted">Записей: 17 017</p></a>
   <a class="item card" href="articles.html"><h3>Статьи</h3><p>Инструкции и разборы</p></a>
   <a class="item card" href="files.html"><h3>Файлы</h3><p>Файлы для скачивания с проверкой хеша</p></a>
 </div>
 </main>
-<footer class="foot">Сборник полезного</footer>
+<footer class="foot">Сборник полезного · <a href="sources.html">Об источниках</a></footer>
 </body>
 </html>

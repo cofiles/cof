@@ -3,22 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="dark light">
+<script src="assets/preferences.js"></script>
 <title>Сборки и образы Windows | Сборник</title>
 <meta name="description" content="Официальные образы, инструменты для сборки своего образа и аварийные диски.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/translations.js" defer></script>
+<script src="assets/i18n.js" defer></script>
+<script src="assets/catalog-windows.js" defer></script>
+<script src="assets/catalog.js" defer></script>
 <script src="assets/app.js" defer></script>
 </head>
 <body>
 <header class="top">
   <a class="logo" href="index.html">Сборник</a>
   <nav aria-label="Разделы"><a href="index.html">Главная</a><a href="tools.html">Программы</a><a href="windows.html" aria-current="page">Windows</a><a href="python.html">Python-пакеты</a><a href="languages.html">Языки</a><a href="repos.html">Репозитории</a><a href="articles.html">Статьи</a><a href="files.html">Файлы</a></nav>
+  <div class="site-settings" role="group" aria-label="Настройки сайта">
+    <label class="sr" for="site-language">Язык</label>
+    <select id="site-language"><option value="ru">Русский</option><option value="en">English</option></select>
+    <button id="site-theme" type="button" class="chip" aria-label="Оформление">Светлая тема</button>
+  </div>
 </header>
 <main class="wrap">
 <h1>Сборки и образы Windows</h1>
 <p class="lead">Официальные образы, инструменты для сборки своего образа и аварийные диски.</p>
 <div class="notice" role="note"><strong>О готовых сборках.</strong> Здесь нет ссылок на чужие готовые сборки с форумов и торрентов. Такие образы могут содержать вредоносный код, активаторы и отключенные обновления, а их лицензия нарушена. Безопаснее взять официальный ISO и настроить его самому инструментами из группы "Свой образ из официального ISO".</div>
+<p class="catalog-note muted">Подборки дополнены проектами по расширенным темам. Поиск охватывает все записи, включая следующие страницы.</p>
 <div class="toolbar"><label class="sr" for="search">Поиск</label><input id="search" type="search" placeholder="Найти образ или инструмент" autocomplete="off"></div>
 <div id="chips" class="chips" role="group" aria-label="Фильтр по теме"></div>
 <p id="count" class="muted" aria-live="polite"></p>
@@ -249,6 +260,6 @@
     </div>
   </section>
 </main>
-<footer class="foot">Сборник полезного</footer>
+<footer class="foot">Сборник полезного · <a href="sources.html">Об источниках</a></footer>
 </body>
 </html>

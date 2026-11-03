@@ -79,3 +79,32 @@ code { font-family: ui-monospace, Consolas, monospace; font-size: .8rem; word-br
 .prose { max-width: 720px; }
 .prose li { margin-bottom: 6px; }
 .notice { margin: 16px 0; padding: 12px 16px; border: 1px solid var(--line); border-left: 4px solid #e0a030; border-radius: 6px; background: var(--surface); color: var(--text); font-size: .92rem; }
+
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: #f6f8fb;
+  --surface2: #e9eef5;
+  --line: #cbd4df;
+  --text: #172333;
+  --muted: #526174;
+  --accent: #185abd;
+  --btn: #205fc9;
+  color-scheme: light;
+}
+.top { background: var(--bg); }
+a:hover { color: var(--text); }
+.site-settings { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.site-settings select { width: auto; margin: 0; padding: 5px 10px; font-size: .85rem; }
+.site-settings button { white-space: nowrap; }
+@media (max-width: 600px) {
+  .top { position: static; gap: 12px; padding: 12px 16px; }
+  .site-settings { margin-left: 0; }
+  .wrap { padding: 28px 16px 48px; }
+  .list { grid-template-columns: minmax(0, 1fr); }
+}
+.catalog-pager { display: flex; gap: 8px; margin: 8px 0 28px; }
+.catalog-pager[hidden], #catalog-empty[hidden] { display: none; }
+.catalog-pager button:disabled { opacity: .45; cursor: default; }
+.catalog-scope { max-width: 78ch; }
+.imported .ver { display: block; margin-top: 6px; }
+.group { scroll-margin-top: 100px; }

@@ -1,0 +1,1092 @@
+[
+  {
+    "page": "tools",
+    "group": "Диски и USB",
+    "scope": "Диски и USB — хранение данных и файловые системы",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Поиск и анализ",
+    "scope": "Поиск и анализ — поисковые системы и обработка данных",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Резервные копии и синхронизация",
+    "scope": "Резервные копии и синхронизация — репликация и перенос данных",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Система и железо",
+    "scope": "Система и железо — ОС, драйверы и диагностика",
+    "original": 20,
+    "added": 981,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Файлы и архивы",
+    "scope": "Файлы и архивы — файловые системы и форматы",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Разработка",
+    "scope": "Разработка — инструменты, библиотеки и среды",
+    "original": 26,
+    "added": 975,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Сеть",
+    "scope": "Сеть — протоколы, серверы и сетевые инструменты",
+    "original": 18,
+    "added": 983,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Безопасность",
+    "scope": "Безопасность — защита, криптография и исследования",
+    "original": 20,
+    "added": 981,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Аудио и видео",
+    "scope": "Аудио и видео — мультимедиа и обработка сигналов",
+    "original": 18,
+    "added": 983,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Графика и документы",
+    "scope": "Графика и документы — изображения, PDF и публикации",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Офис и заметки",
+    "scope": "Офис и заметки — продуктивность и управление знаниями",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Windows и настройка",
+    "scope": "Windows и настройка — приложения, системные инструменты и интеграции",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Linux и виртуальные машины",
+    "scope": "Linux и виртуальные машины — виртуализация и контейнеры",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Браузеры и интернет",
+    "scope": "Браузеры и интернет — браузерные расширения и web-инструменты",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Игры и лаунчеры",
+    "scope": "Игры и лаунчеры — игровые движки и инструменты",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Общение",
+    "scope": "Общение — мессенджеры, чат, почта и боты",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Удаленный доступ",
+    "scope": "Удаленный доступ — удаленное управление и сетевые подключения",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Тесты производительности",
+    "scope": "Тесты производительности — профилирование и оптимизация",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Текст, сравнение, hex",
+    "scope": "Текст, сравнение, hex — редакторы, парсеры и преобразования",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Web-разработка локально",
+    "scope": "Web-разработка локально — web-фреймворки и инструменты",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Клиенты баз данных",
+    "scope": "Клиенты баз данных — СУБД, драйверы и инструменты",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "DevOps и облака",
+    "scope": "DevOps и облака — инфраструктура и развертывание",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Менеджеры пакетов",
+    "scope": "Менеджеры пакетов — экосистемы пакетов и сборка",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Компиляторы и среды выполнения",
+    "scope": "Компиляторы и среды выполнения — языки и инструменты",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Музыка и звук",
+    "scope": "Музыка и звук — аудио, синтез и обработка сигналов",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Видео и стримы",
+    "scope": "Видео и стримы — обработка изображений и трансляции",
+    "original": 6,
+    "added": 995,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Графика, 3D и CAD",
+    "scope": "Графика, 3D и CAD — рендеринг и компьютерное зрение",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Наука и учеба",
+    "scope": "Наука и учеба — научные вычисления и образование",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Электроника и микроконтроллеры",
+    "scope": "Электроника и микроконтроллеры — встроенные системы и IoT",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Приватность",
+    "scope": "Приватность — защита данных, шифрование и анонимность",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Защита и мониторинг",
+    "scope": "Защита и мониторинг — наблюдаемость и диагностика",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Серверные системы и дистрибутивы",
+    "scope": "Серверные системы и дистрибутивы — серверная инфраструктура",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Онлайн-инструменты",
+    "scope": "Онлайн-инструменты — web-приложения, сервисы и API",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Автоматизация",
+    "scope": "Автоматизация — сценарии, процессы и рабочие потоки",
+    "original": 6,
+    "added": 995,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "tools",
+    "group": "Свои сервисы (self-hosted)",
+    "scope": "Свои сервисы — self-hosted, серверы и приватные облака",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Языки программирования",
+    "scope": "Компиляторы и среды выполнения — языки и инструменты",
+    "original": 80,
+    "added": 921,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Web и фронтенд",
+    "scope": "Web и фронтенд — интерфейсы, компоненты и экосистемы",
+    "original": 35,
+    "added": 966,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Бэкенд и фреймворки",
+    "scope": "Бэкенд и фреймворки — сервисы, API и серверные библиотеки",
+    "original": 25,
+    "added": 976,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Данные и ИИ",
+    "scope": "Данные и ИИ — анализ данных и машинное обучение",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Инфраструктура и базы данных",
+    "scope": "Клиенты баз данных — СУБД, драйверы и инструменты",
+    "original": 25,
+    "added": 976,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Обучение и справочники",
+    "scope": "Обучение и справочники — учебники, примеры и документация",
+    "original": 25,
+    "added": 976,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Еще языки и форматы",
+    "scope": "Еще языки и форматы — парсеры, DSL и обработка данных",
+    "original": 35,
+    "added": 966,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Сборка и пакеты",
+    "scope": "Менеджеры пакетов — экосистемы пакетов и сборка",
+    "original": 15,
+    "added": 986,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "JavaScript и TypeScript",
+    "scope": "JavaScript и TypeScript — библиотеки и инструменты",
+    "original": 30,
+    "added": 971,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Python: экосистема и справка",
+    "scope": "Python — экосистема, библиотеки и справка",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "JVM и .NET",
+    "scope": "JVM и .NET — библиотеки, среды и приложения",
+    "original": 15,
+    "added": 986,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Go и Rust",
+    "scope": "Go и Rust — библиотеки, инструменты и приложения",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Мобильные, десктоп и игры",
+    "scope": "Мобильные, десктоп и игры — приложения и инструменты",
+    "original": 15,
+    "added": 986,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Базы данных и очереди",
+    "scope": "Базы данных и очереди — хранение, сообщения и потоки",
+    "original": 20,
+    "added": 981,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Облако и DevOps",
+    "scope": "DevOps и облака — инфраструктура и развертывание",
+    "original": 20,
+    "added": 981,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Стандарты и спецификации",
+    "scope": "Стандарты и спецификации — протоколы и реализации",
+    "original": 6,
+    "added": 995,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "languages",
+    "group": "Обучение и сообщества",
+    "scope": "Обучение и сообщества — материалы, проекты и подборки",
+    "original": 20,
+    "added": 981,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Python",
+    "scope": "Python — экосистема, библиотеки и справка",
+    "original": 28,
+    "added": 973,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Консоль",
+    "scope": "Консоль — оболочки, CLI и терминальные приложения",
+    "original": 25,
+    "added": 976,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Приложения и утилиты",
+    "scope": "Приложения и утилиты — desktop, web и системные инструменты",
+    "original": 32,
+    "added": 969,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Web и фронтенд",
+    "scope": "Web и фронтенд — интерфейсы, компоненты и экосистемы",
+    "original": 25,
+    "added": 976,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Обучение и подборки",
+    "scope": "Обучение и подборки — справочники и коллекции ресурсов",
+    "original": 28,
+    "added": 973,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Инфраструктура",
+    "scope": "DevOps и облака — инфраструктура и развертывание",
+    "original": 24,
+    "added": 977,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Данные и ИИ",
+    "scope": "Данные и ИИ — анализ данных и машинное обучение",
+    "original": 22,
+    "added": 979,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Безопасность",
+    "scope": "Безопасность — защита, криптография и исследования",
+    "original": 16,
+    "added": 985,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Python: еще",
+    "scope": "Python — экосистема, библиотеки и справка",
+    "original": 30,
+    "added": 971,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Инструменты разработчика",
+    "scope": "Разработка — инструменты, библиотеки и среды",
+    "original": 28,
+    "added": 973,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Web и фронтенд: еще",
+    "scope": "Web и фронтенд — интерфейсы, компоненты и экосистемы",
+    "original": 30,
+    "added": 971,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Языки и компиляторы",
+    "scope": "Компиляторы и среды выполнения — языки и инструменты",
+    "original": 20,
+    "added": 981,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Данные и ИИ: еще",
+    "scope": "Данные и ИИ — анализ данных и машинное обучение",
+    "original": 22,
+    "added": 979,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Инфраструктура: еще",
+    "scope": "DevOps и облака — инфраструктура и развертывание",
+    "original": 28,
+    "added": 973,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Безопасность: еще",
+    "scope": "Безопасность — защита, криптография и исследования",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Windows",
+    "scope": "Windows и настройка — приложения, системные инструменты и интеграции",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "repos",
+    "group": "Подборки: еще",
+    "scope": "Обучение и подборки — справочники и коллекции ресурсов",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "HTTP и сеть",
+    "scope": "HTTP и сеть — протоколы, клиенты и сетевые библиотеки",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Парсинг",
+    "scope": "Парсинг — разбор форматов, извлечение данных и web-скрейпинг",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Web",
+    "scope": "Web — фреймворки, расширения и серверные библиотеки",
+    "original": 20,
+    "added": 981,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Async",
+    "scope": "Async — асинхронность, конкурентность и сетевые приложения",
+    "original": 6,
+    "added": 995,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Боты и планировщики",
+    "scope": "Боты и планировщики — интеграции и автоматизация процессов",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Данные",
+    "scope": "Данные — анализ, таблицы и статистика",
+    "original": 16,
+    "added": 985,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Машинное обучение и ИИ",
+    "scope": "Машинное обучение и ИИ — модели, обучение и инструменты",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Визуализация",
+    "scope": "Визуализация — графики, диаграммы и дашборды",
+    "original": 9,
+    "added": 992,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Базы данных",
+    "scope": "Базы данных — драйверы, ORM и инструменты хранения",
+    "original": 15,
+    "added": 986,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Тесты",
+    "scope": "Тесты — тестирование, моки и измерения",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Качество кода",
+    "scope": "Качество кода — анализ, форматирование и документация",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Утилиты и CLI",
+    "scope": "Утилиты и CLI — консольные приложения и инструменты",
+    "original": 20,
+    "added": 981,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Файлы и форматы",
+    "scope": "Файлы и форматы — чтение, запись и преобразования",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Безопасность",
+    "scope": "Безопасность — криптография, доступ и проверки",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Автоматизация и система",
+    "scope": "Автоматизация и система — процессы, настройка и управление",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Интерфейсы и игры",
+    "scope": "Интерфейсы и игры — GUI, виджеты и игровые библиотеки",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "HTTP и сеть: еще",
+    "scope": "HTTP и сеть — протоколы, клиенты и сетевые библиотеки",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Web: еще",
+    "scope": "Web — фреймворки, расширения и серверные библиотеки",
+    "original": 18,
+    "added": 983,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Парсинг: еще",
+    "scope": "Парсинг — разбор форматов, извлечение данных и web-скрейпинг",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Боты и планировщики: еще",
+    "scope": "Боты и планировщики — интеграции и автоматизация процессов",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Данные, изображения и звук: еще",
+    "scope": "Данные, изображения и звук — мультимедиа и геоданные",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "ИИ: еще",
+    "scope": "Машинное обучение и ИИ — модели, обучение и инструменты",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Визуализация: еще",
+    "scope": "Визуализация — графики, диаграммы и дашборды",
+    "original": 5,
+    "added": 996,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Базы данных: еще",
+    "scope": "Базы данных — драйверы, ORM и инструменты хранения",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Тесты: еще",
+    "scope": "Тесты — тестирование, моки и измерения",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Качество кода и документация: еще",
+    "scope": "Качество кода — анализ, форматирование и документация",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Пакеты и сборка",
+    "scope": "Пакеты и сборка — зависимости, установка и развертывание",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Утилиты и CLI: еще",
+    "scope": "Утилиты и CLI — консольные приложения и инструменты",
+    "original": 18,
+    "added": 983,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Файлы и форматы: еще",
+    "scope": "Файлы и форматы — чтение, запись и преобразования",
+    "original": 12,
+    "added": 989,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Безопасность: еще",
+    "scope": "Безопасность — криптография, доступ и проверки",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Автоматизация Windows и системы: еще",
+    "scope": "Автоматизация и система — процессы, настройка и управление",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Интерфейсы и игры: еще",
+    "scope": "Интерфейсы и игры — GUI, виджеты и игровые библиотеки",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Облако и DevOps",
+    "scope": "Облако и DevOps — инфраструктура и интеграции",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Наука и математика",
+    "scope": "Наука и математика — вычисления, модели и оптимизация",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "python",
+    "group": "Текст и языки",
+    "scope": "Текст и языки — NLP, строки и локализация",
+    "original": 7,
+    "added": 994,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "windows",
+    "group": "Официальные образы и сроки поддержки",
+    "scope": "Официальные образы и сроки поддержки — официальная документация Windows Server",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "windows",
+    "group": "Получение и запись образов",
+    "scope": "Получение и запись образов — хранение данных, устройства и развертывание",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "windows",
+    "group": "Свой образ из официального ISO",
+    "scope": "Свой образ из официального ISO — настройка Windows и PowerShell",
+    "original": 14,
+    "added": 987,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "windows",
+    "group": "Аварийные диски и WinPE",
+    "scope": "Аварийные диски и WinPE — восстановление, диагностика и отладка",
+    "original": 10,
+    "added": 991,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  },
+  {
+    "page": "windows",
+    "group": "Справка и новости",
+    "scope": "Справка и новости — справочники Windows и системное администрирование",
+    "original": 8,
+    "added": 993,
+    "total": 1001,
+    "unique_urls": 1001,
+    "target_met": true
+  }
+]

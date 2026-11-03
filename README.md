@@ -1,258 +1,153 @@
-<div align="center">
+# Обновление каталога
 
-# COFILES
+В каждой из 109 тематических подгрупп — 1001 запись. Всего 109109 размещений, 85468 различных URL. Тематика расширена до связанных проектов, библиотек и документации. Источники и ограничения классификации описаны в SOURCES.md и на странице sources.html.
 
-### Everything useful in one place.
+Добавлены полный английский перевод, светлая тема, постраничный просмотр и поиск. В генераторе requirements.txt кнопка «Выбрать все пакеты» выбирает весь каталог, независимо от поиска и фильтров, с устранением повторов по нормализованному имени пакета.
 
-**A curated directory of tools, technologies, and resources for developers and PC users.**
-
-Software, Windows resources, Python packages, programming languages, GitHub repositories, guides, and downloads. No account required. No ads.
-
-[![Website](https://img.shields.io/badge/Explore-COFILES-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://cofiles.github.io/cof/)
-[![GitHub](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cofiles/cof)
-
-<br>
-
-![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-222222?style=flat-square&logo=githubpages&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MPL_2.0-3b82f6?style=flat-square)
-
-<br>
-
-[**About**](#-about-the-project) · [**Features**](#-features) · [**Directory**](#-explore-the-directory) · [**Getting Started**](#-getting-started) · [**Structure**](#-project-structure) · [**Contributing**](#-contributing)
-
-</div>
+Для открытия сайта запустите index.html. Для локального сервера: `python3 -m http.server 8000`. Проверка данных: `python3 validate_site.py`.
 
 ---
 
-## ✦ About the Project
+# Сборник: статичный сайт для GitHub Pages
 
-**COFILES** is an open web directory of useful digital resources. Its purpose is simple: make tools and information easy to find without having to search across dozens of websites.
+Сайт состоит из обычных HTML-файлов. Сервера, базы данных и админки нет. Все правки делаются в тексте файлов.
 
-Discover PC software, Windows resources, Python libraries, programming languages and technologies, noteworthy GitHub projects, articles, and downloadable files in one place.
+## Что внутри
 
-COFILES is a static website hosted on **GitHub Pages**. You can browse it directly, with no installation, account, or registration required.
-
-> **One website. Hundreds of resources. No distractions.**
-
-## ✨ Features
-
-| Feature | Description |
-| :--- | :--- |
-| 🔎 **Easy search** | Find relevant resources within each directory. |
-| 🗂️ **Organized categories** | Browse resources grouped by topic. |
-| 🐍 **`requirements.txt` generator** | Select Python packages and download a ready-to-use dependency file. |
-| 🪟 **Windows resources** | Find official ISO images, custom ISO creation tools, and recovery utilities. |
-| 📚 **Articles and guides** | Explore practical tutorials and reference materials. |
-| 🔐 **SHA-256 checksums** | Checksum information is available for hosted files. |
-| 🌐 **Instant access** | Browse without signing in or viewing ads. |
-| 🧩 **Open source** | Explore the source code and contribute improvements. |
-
-## 📂 Explore the Directory
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🖥️ Software
-
-**400 entries**
-
-Utilities for system management, storage, development, networking, multimedia, and more.
-
-[Browse software](https://cofiles.github.io/cof/tools.html)
-
-</td>
-<td width="50%" valign="top">
-
-### 🪟 Windows
-
-**50 entries**
-
-Official images, ISO tools, and system recovery utilities.
-
-[Explore Windows resources](https://cofiles.github.io/cof/windows.html)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-### 🐍 Python Packages
-
-**400 entries**
-
-Libraries for web development, automation, scraping, data analysis, and more. Includes a built-in `requirements.txt` builder.
-
-[Explore Python packages](https://cofiles.github.io/cof/python.html)
-
-</td>
-<td valign="top">
-
-### 💻 Languages & Technologies
-
-**400 entries**
-
-Programming languages, frameworks, databases, and learning resources.
-
-[Discover technologies](https://cofiles.github.io/cof/languages.html)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-### ⭐ GitHub Repositories
-
-**400 entries**
-
-A selection of open-source projects, utilities, and useful collections.
-
-[Discover repositories](https://cofiles.github.io/cof/repos.html)
-
-</td>
-<td valign="top">
-
-### 📖 Articles & Downloads
-
-Tutorials, documentation, and a separate directory of downloadable files with checksums.
-
-[Read articles](https://cofiles.github.io/cof/articles.html) · [Browse files](https://cofiles.github.io/cof/files.html)
-
-</td>
-</tr>
-</table>
-
-<sub>Entry counts reflect the directory at the time this README was prepared and may change.</sub>
-
-## ⚡ `requirements.txt` Generator
-
-One of COFILES' built-in features lets you create a list of Python dependencies directly in your browser.
-
-1. Open the [Python package directory](https://cofiles.github.io/cof/python.html).
-2. Search for the libraries you need or use a predefined collection.
-3. Select packages and choose your preferred version format.
-4. Download the generated `requirements.txt` file.
-
-Install the dependencies in your Python project:
-
-```bash
-python -m pip install -r requirements.txt
+```
+index.html        главная
+tools.html        программы и утилиты для ПК
+windows.html      официальные образы Windows, сборка своего образа, аварийные диски
+python.html       Python-пакеты и генератор requirements.txt
+languages.html    языки, фреймворки, базы данных, учебники
+repos.html        репозитории GitHub
+articles.html     список статей
+articles/         страницы статей и шаблон _template.html
+files.html        файлы для скачивания
+files/            сами файлы
+assets/           стили, скрипт, значок
+make_hashes.py    выдает строки таблицы с SHA-256 для новых файлов
+check_links.py    проверяет, что внешние ссылки на сайте открываются
+.nojekyll         отключает обработку Jekyll, не удаляй
+404.html          страница ошибки
 ```
 
-**No need to type every package name manually.**
+## 1. Первый запуск на GitHub
 
-## 🛠️ Tech Stack
+### Создание репозитория
+1. Зайди на github.com и войди в аккаунт
+2. Нажми плюс справа вверху и выбери New repository
+3. Введи имя, например `sbornik`
+4. Выбери Public. На бесплатном тарифе Pages работает только с публичными репозиториями
+5. Нажми Create repository
 
-| Technology | Purpose |
-| :--- | :--- |
-| HTML5 | Page structure and directory cards |
-| CSS3 | Styling and responsive layouts |
-| JavaScript | Search, filtering, and interactive features |
-| Python | Utility scripts for directory maintenance |
-| GitHub Pages | Static site hosting |
+Если назовешь репозиторий `ТВОЕ_ИМЯ.github.io`, сайт откроется по адресу `https://ТВОЕ_ИМЯ.github.io/`. При любом другом имени адрес такой: `https://ТВОЕ_ИМЯ.github.io/ИМЯ_РЕПОЗИТОРИЯ/`.
 
-The website does not require a server-side application, database, or separate administration dashboard. Directory content and pages are stored directly in the repository.
+### Загрузка файлов, вариант 1: через браузер
+1. Распакуй архив site.zip
+2. В репозитории нажми Add file, затем Upload files
+3. Перетащи содержимое папки site, не саму папку
+4. Файл `.nojekyll` скрыт в проводнике Windows. Включи показ скрытых файлов: Вид, Показать, Скрытые элементы
+5. Нажми Commit changes
 
-## 🚀 Getting Started
+В браузере за один раз можно загрузить до 100 файлов.
 
-You only need a web browser to explore the site. The website itself has no additional dependencies.
+### Загрузка файлов, вариант 2: через Git
+Установи Git с git-scm.com, открой терминал в папке сайта и введи:
 
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/cofiles/cof.git
-cd cof
+```
+git init
+git add .
+git commit -m "Первая версия"
+git branch -M main
+git remote add origin https://github.com/ТВОЕ_ИМЯ/ИМЯ_РЕПОЗИТОРИЯ.git
+git push -u origin main
 ```
 
-**2. Open `index.html`** in your browser.
+При первом `git push` откроется окно входа в GitHub. Войди через браузер.
 
-For development, you can also start a local HTTP server with Python:
+### Включение Pages
+1. В репозитории открой Settings
+2. В левом меню выбери Pages
+3. В блоке Build and deployment выбери Source: Deploy from a branch
+4. Выбери Branch: main, папка / (root), нажми Save
+5. Через 1-2 минуты наверху страницы появится адрес сайта
 
-```bash
-python -m http.server 8000
+## 2. Как менять сайт
+
+После любой правки:
+
+```
+git add .
+git commit -m "Что поменял"
+git push
 ```
 
-Then visit:
+Через минуту изменения появятся на сайте. В браузере можно править файлы кнопкой с карандашом на странице файла в репозитории.
 
-```text
-http://localhost:8000
+Проверка перед отправкой: открой `index.html` двойным щелчком. Все ссылки относительные, сайт работает и без интернета.
+
+### Добавить программу, язык или репозиторий
+1. Открой нужную страницу (tools.html, languages.html, repos.html)
+2. Найди в нужной группе блок `<article class="item" ...>`
+3. Скопируй блок целиком и вставь под ним
+4. Поменяй название, описание и ссылку
+
+### Добавить новую группу
+Скопируй целый блок `<section class="group">` вместе с заголовком, поменяй название группы и записи внутри. Значение `data-tags` у записей группы должно совпадать, оно создает кнопку фильтра сверху страницы.
+
+### Добавить Python-пакет
+1. Открой python.html
+2. Скопируй блок article любого пакета
+3. Поменяй имя пакета в трех местах: id, value и текст рядом с галочкой. Поменяй ссылку на PyPI
+4. data-version: версия для режимов "==" и ">=". Без него в файл попадет только имя
+5. data-sets: наборы, в которые входит пакет. Доступны web, parsing, bots, data, db, tests, tools
+
+Версии в блоках указаны на дату создания сайта. Обновляй data-version вручную.
+
+Доступные наборы: web, parsing, bots, data, ml, db, tests, tools, security, gui.
+
+Новый набор: добавь кнопку `<button type="button" class="chip" data-set="имя">Название</button>` в блоке Готовые наборы и впиши `имя` в data-sets нужных пакетов.
+
+### Добавить статью
+1. Скопируй `articles/_template.html` под новым именем, например `articles/my-article.html`
+2. Напиши текст внутри `<article class="prose">`
+3. На странице articles.html скопируй карточку статьи и поменяй название, описание и ссылку
+
+### Добавить файл
+1. Положи файл в папку `files`
+2. Запусти `python make_hashes.py`
+3. Скопируй выданную строку в таблицу на files.html и впиши описание
+
+Ссылка с атрибутом `download` скачивает файл с твоего сайта. Хеш SHA-256 посетитель проверяет в PowerShell командой `Get-FileHash имя_файла`.
+
+## 3. Страница Windows
+
+На странице windows.html собраны официальные источники образов Microsoft и инструменты для сборки своего образа из официального ISO. Ссылок на чужие готовые сборки там нет. Такие образы с форумов и торрентов могут содержать вредоносный код, а их распространение нарушает лицензию Microsoft.
+
+## 4. Проверка ссылок
+
+Ссылки на внешние сайты могут устареть. Раз в несколько месяцев запускай:
+
 ```
-
-## 🗃️ Project Structure
-
-```text
-cof/
-├── index.html           # Homepage
-├── tools.html           # Software and utilities
-├── windows.html         # Windows resources and system tools
-├── python.html          # Python packages and requirements.txt builder
-├── languages.html       # Programming languages and technologies
-├── repos.html           # GitHub repositories
-├── articles.html        # Article directory
-├── articles/            # Individual articles
-├── files.html           # File directory
-├── files/               # Downloadable files
-├── assets/              # CSS, JavaScript, and UI assets
-├── check_links.py       # External link checker
-├── make_hashes.py       # SHA-256 checksum generator
-├── 404.html             # Custom 404 page
-├── LICENSE              # MPL 2.0 license
-└── README.md            # Documentation
-```
-
-## 🔧 Maintenance Tools
-
-### Check External Links
-
-```bash
 python check_links.py
 ```
 
-This script checks external directory links and writes problematic addresses to `broken_links.txt`. Some websites restrict automated requests, so reported results should be verified in a browser.
+Скрипт проверит все ссылки и запишет проблемные в `broken_links.txt`. Ссылки с кодом 403 и 429 часто просто блокируют скрипты, открой их в браузере.
 
-### Generate File Checksums
+## 5. Ограничения GitHub
 
-```bash
-python make_hashes.py
-```
+- Размер файла в репозитории до 100 МБ
+- Рекомендуемый размер репозитория и максимальный размер сайта: 1 ГБ
+- Мягкий лимит трафика сайта: 100 ГБ в месяц
+- Страницы с каталогом весят до 200 КБ, этого достаточно для быстрой загрузки
+- Pages не запускает серверный код: нет входа, комментариев и счетчика скачиваний
+- Сайт и все файлы в репозитории видят все. Не клади туда личные данные, пароли и ключи
 
-This script helps prepare SHA-256 checksums for files added to the directory. A checksum lets users verify the integrity of a downloaded file.
+Для файлов больше 100 МБ используй Releases: в репозитории открой Releases, создай релиз, прикрепи файл и вставь ссылку на него в таблицу на files.html.
 
-On Windows, use PowerShell:
+Не размещай чужие программы у себя в репозитории. Ссылайся на официальные страницы загрузки: так проще с авторскими правами и версии всегда свежие.
 
-```powershell
-Get-FileHash .\filename.ext -Algorithm SHA256
-```
+## 6. Свой домен
 
-## 🤝 Contributing
-
-COFILES welcomes suggestions and improvements. Report broken links, recommend useful software, correct descriptions, add resources, or improve the interface.
-
-1. [Open an issue](https://github.com/cofiles/cof/issues) to describe a bug or suggestion.
-2. Fork the repository if you want to contribute code.
-3. Make your changes in a separate branch.
-4. Submit a pull request with a clear description.
-
-## 📜 License
-
-This project is distributed under the **Mozilla Public License 2.0 (MPL-2.0)**.
-
-See [LICENSE](LICENSE) for details.
-
----
-
-<div align="center">
-
-### COFILES
-
-**Find. Learn. Build.**
-
-[🌐 Visit COFILES](https://cofiles.github.io/cof/) · [💻 View Source](https://github.com/cofiles/cof) · [💡 Suggest an Improvement](https://github.com/cofiles/cof/issues)
-
-<sub>Made for curious minds and practical work.</sub>
-
-</div>
+В Settings, Pages есть поле Custom domain. Домен нужно купить отдельно и настроить DNS по инструкции GitHub.
