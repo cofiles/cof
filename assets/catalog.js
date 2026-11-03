@@ -6,7 +6,25 @@
   var allPackages = new Map();
   var groups = [];
   var reverseTranslations = new Map(Object.entries(window.SITE_TRANSLATIONS || {}).map(function (pair) { return [pair[1], pair[0]]; }));
-  var active = '', query = '';
+  var active = '', query = '', popularOnly = false;
+  var popularity = new Map();
+  (window.CATALOG_ADDITIONS || []).forEach(function (group) { (group.entries || []).forEach(function (record) { if (record.stars) popularity.set(record.url.toLowerCase().replace(/\/$/, ''), record.stars); }); });
+  function starsOf(record) { return record.stars || popularity.get(record.url.toLowerCase().replace(/\/$/, '')) || 0; }
+  function decorate(node, record) {
+    node.querySelectorAll('.entry-badges').forEach(function (old) { old.remove(); });
+    var badges = el('span', 'entry-badges');
+    var stars = starsOf(record);
+    if (stars >= 10000) {
+      var badge = el('span', 'tracker-badge popular', bilingual('ПОПУЛЯРНОЕ', 'POPULAR'));
+      badge.title = bilingual('Не менее 10 000 звёзд GitHub в снимке каталога: ', 'At least 10,000 GitHub stars in the catalog snapshot: ') + stars.toLocaleString(document.documentElement.lang);
+      badges.appendChild(badge);
+    }
+    if (record.source === 'microsoft') badges.appendChild(el('span', 'tracker-badge docs', bilingual('ДОКУМЕНТАЦИЯ', 'DOCUMENTATION')));
+    if (record.source === 'pypi') badges.appendChild(el('span', 'tracker-badge package', 'PYPI'));
+    var heading = node.querySelector('h3') || node.querySelector('.pick');
+    if (heading && badges.childNodes.length) heading.appendChild(badges);
+    return node;
+  }
   function bilingual(ru, en) { return document.documentElement.lang === 'en' ? en : ru; }
   function el(tag, className, text) {
     var node = document.createElement(tag);
@@ -27,7 +45,7 @@
     if (record.node) {
       var input = record.node.querySelector('input.pkg');
       if (input) input.checked = selected.has(key(record.name));
-      return record.node;
+      return decorate(record.node, record);
     }
     var article = el('article', 'item imported');
     var link = el('a', '', record.name);
@@ -56,7 +74,7 @@
     if (topics.length) article.appendChild(el('p', 'muted', topics.join(' · ')));
     if (record.source === 'pypi') article.appendChild(link);
     if (record.version) article.appendChild(el('span', 'ver', record.version));
-    return article;
+    return decorate(article, record);
   }
   function renderGroup(group) {
     group.list.replaceChildren();
@@ -76,7 +94,7 @@
     var total = 0, found = 0;
     groups.forEach(function (group) {
       total += group.records.length;
-      group.matches = active && active !== group.tag ? [] : group.records.filter(function (record) { return !query || record.search.includes(query); });
+      group.matches = active && active !== group.tag ? [] : group.records.filter(function (record) { return (!popularOnly || starsOf(record) >= 10000) && (!query || record.search.includes(query)); });
       found += group.matches.length;
       group.element.hidden = !group.matches.length;
       if (reset) group.page = 0;
@@ -186,8 +204,8 @@
       pager.append(previous, next); list.after(status, pager);
       var group = {index:index, element:element, list:list, records:original.concat(additions), matches:[], page:0, tag:tag, pager:pager, previous:previous, next:next, status:status, expanded_ru:data.expanded_ru, expanded_en:data.expanded_en};
       if (data.expanded_ru) { group.scope = el('p', 'catalog-scope muted'); list.before(group.scope); }
-      previous.addEventListener('click', function () { group.page--; renderGroup(group); element.scrollIntoView({block:'start'}); });
-      next.addEventListener('click', function () { group.page++; renderGroup(group); element.scrollIntoView({block:'start'}); });
+      previous.addEventListener('click', function () { group.page--; renderGroup(group); window.siteScroll(element.getBoundingClientRect().top + window.scrollY - 24); });
+      next.addEventListener('click', function () { group.page++; renderGroup(group); window.siteScroll(element.getBoundingClientRect().top + window.scrollY - 24); });
       group.records.forEach(function (record) { if (record.source === 'pypi' && !allPackages.has(key(record.name))) allPackages.set(key(record.name), record); });
       groups.push(group);
     });
@@ -199,6 +217,8 @@
     var empty = el('p', 'notice'); empty.id='catalog-empty'; document.getElementById('count').after(empty);
     input.addEventListener('input', function () { query=input.value.trim().toLowerCase(); apply(true); });
     document.addEventListener('site-language-change', function () { apply(false); refreshRequirements(); });
+    var popularControl = document.getElementById('popular-only');
+    if (popularControl) popularControl.addEventListener('change', function () { popularOnly = popularControl.checked; apply(true); });
     initRequirements(); apply(true);
   });
 })();

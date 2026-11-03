@@ -1786,5 +1786,19 @@ window.SITE_TRANSLATIONS = {
   "Об источниках | Сборник": "Sources | Collection",
   "Для перевода новой записи добавь её русское описание и английский перевод в assets/translations.js. Дополнительные каталоги находятся в файлах assets/catalog-*.js.": "To translate a new entry, add its Russian description and English translation to assets/translations.js. Additional catalogs are stored in assets/catalog-*.js.",
   "Сборник полезного ·": "A collection of useful resources ·",
-  "Выбрать все пакеты": "Select all packages"
+  "Выбрать все пакеты": "Select all packages",
+  "Тема": "Topic",
+  "Перемещение по странице": "Page navigation",
+  "В начало страницы": "Go to top",
+  "В конец страницы": "Go to bottom",
+  "КАТАЛОГ": "CATALOG",
+  "По 1001 записи в каждой подгруппе": "1001 entries in every group",
+  "Источники и статистика": "Sources and statistics",
+  "Только популярное — от 10 000 звёзд GitHub": "Popular only — at least 10,000 GitHub stars",
+  "Популярность указана по снимку каталога, а не по текущим просмотрам сайта.": "Popularity is based on the catalog snapshot, not current website views.",
+  "ОТКРЫВАЙ. СОБИРАЙ. СОЗДАВАЙ.": "DISCOVER. COLLECT. CREATE.",
+  "записей в каталоге": "catalog entries",
+  "тематических подгрупп": "topic groups",
+  "запись в каждой": "entries in each",
+  "Твоя следующая находка": "Your next discovery"
 };

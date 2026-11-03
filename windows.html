@@ -14,11 +14,14 @@
 <script src="assets/catalog-windows.js" defer></script>
 <script src="assets/catalog.js" defer></script>
 <script src="assets/app.js" defer></script>
+<script src="assets/interface.js" defer></script>
+<script src="assets/motion.js" defer></script>
+<script src="assets/interactions.js" defer></script>
 </head>
 <body>
 <header class="top">
   <a class="logo" href="index.html">Сборник</a>
-  <nav aria-label="Разделы"><a href="index.html">Главная</a><a href="tools.html">Программы</a><a href="windows.html" aria-current="page">Windows</a><a href="python.html">Python-пакеты</a><a href="languages.html">Языки</a><a href="repos.html">Репозитории</a><a href="articles.html">Статьи</a><a href="files.html">Файлы</a></nav>
+  <nav aria-label="Разделы"><a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10H3Z"/><path d="M9 20v-7h6v7"/></svg><span class="nav-label">Главная</span></a><a href="tools.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg><span class="nav-label">Программы</span></a><a href="windows.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h8v7H3zm10 0h8v7h-8zM3 13h8v7H3zm10 0h8v7h-8z"/></svg><span class="nav-label">Windows</span></a><a href="python.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 20"/></svg><span class="nav-label">Python-пакеты</span></a><a href="languages.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 19 6-14 6 14M5 15h8m2-3h6m-3 0v8"/></svg><span class="nav-label">Языки</span></a><a href="repos.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><path d="M6 7v10m12-10v3c0 4-12 1-12 5"/></svg><span class="nav-label">Репозитории</span></a><a href="articles.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v16M3 3l9 2 9-2v16l-9 2-9-2Z"/></svg><span class="nav-label">Статьи</span></a><a href="files.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V4h7l3 3h8v13H3Z"/></svg><span class="nav-label">Файлы</span></a></nav>
   <div class="site-settings" role="group" aria-label="Настройки сайта">
     <label class="sr" for="site-language">Язык</label>
     <select id="site-language"><option value="ru">Русский</option><option value="en">English</option></select>
@@ -30,6 +33,7 @@
 <p class="lead">Официальные образы, инструменты для сборки своего образа и аварийные диски.</p>
 <div class="notice" role="note"><strong>О готовых сборках.</strong> Здесь нет ссылок на чужие готовые сборки с форумов и торрентов. Такие образы могут содержать вредоносный код, активаторы и отключенные обновления, а их лицензия нарушена. Безопаснее взять официальный ISO и настроить его самому инструментами из группы "Свой образ из официального ISO".</div>
 <p class="catalog-note muted">Подборки дополнены проектами по расширенным темам. Поиск охватывает все записи, включая следующие страницы.</p>
+<div class="tracker-info"><strong>КАТАЛОГ</strong><span>По 1001 записи в каждой подгруппе</span><a href="sources.html">Источники и статистика</a></div>
 <div class="toolbar"><label class="sr" for="search">Поиск</label><input id="search" type="search" placeholder="Найти образ или инструмент" autocomplete="off"></div>
 <div id="chips" class="chips" role="group" aria-label="Фильтр по теме"></div>
 <p id="count" class="muted" aria-live="polite"></p>
@@ -261,5 +265,6 @@
   </section>
 </main>
 <footer class="foot">Сборник полезного · <a href="sources.html">Об источниках</a></footer>
+<div class="scroll-controls" role="group" aria-label="Перемещение по странице"><button type="button" data-scroll="top" aria-label="В начало страницы" title="В начало страницы">↑</button><button type="button" data-scroll="bottom" aria-label="В конец страницы" title="В конец страницы">↓</button></div>
 </body>
 </html>
